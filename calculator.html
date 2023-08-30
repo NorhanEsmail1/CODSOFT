@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title> calculator </title>
+    <link rel="stylesheet" type="text/css" href="calculator.css">
+    <script type="text/javascript" src="calculator.js"></script>
+</head>
+
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <form name="form">
+            <input type="text" name="textview" class="textview" readonly>
+        </form>
+        <div class="calcu">
+            <input type="button" class="cal" value="Clear" onclick="clearFelid();">
+            <input type="button" class="cal" value="Ans" onclick="lastAnswer();">
+            <input type="button" class="cal" value="Del" onclick="delet();">
+            <input type="button" class="cal" value="&#247;" onclick="insert('/');">
+        </div>
+        <div class="calcu">
+            <input type="button" class="cal" value="7" onclick="insert(7);">
+            <input type="button" class="cal" value="8" onclick="insert(8);">
+            <input type="button" class="cal" value="9" onclick="insert(9);">
+            <input type="button" class="cal" value="&#215;" onclick="insert('*');">
+        </div>
+        <div class="calcu">
+            <input type="button" class="cal" value="4" onclick="insert(4);">
+            <input type="button" class="cal" value="5" onclick="insert(5);">
+            <input type="button" class="cal" value="6" onclick="insert(6);">
+            <input type="button" class="cal" value="&#8722;" onclick="insert('-');">
+        </div>
+        <div class="calcu">
+            <input type="button" class="cal" value="1" onclick="insert(1);">
+            <input type="button" class="cal" value="2" onclick="insert(2);">
+            <input type="button" class="cal" value="3" onclick="insert(3);">
+            <input type="button" class="cal" value="&#43;" onclick="insert('+');">
+        </div>
+        <div class="calcu">
+            <input type="button" class="cal" value="." onclick="insert('.');">
+            <input type="button" class="cal" value="0" onclick="insert(0);">
+            <input type="button" class="cal" value="&#61;" onclick="equal();">
+        </div>
+    </div>
+</body>
+
+</html>
